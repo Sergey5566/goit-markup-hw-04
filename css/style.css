@@ -14,6 +14,7 @@
     --cloud-color: #F4F4FD;
     --grey-color: #2E2F42;
     --white-color: #ffffff;
+    --green: #31D0AA;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -194,25 +195,19 @@ img{
 
 /*-------------------------CAPTION--------------------------*/
 .advantages{
-}
-
-.advantages-link{
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 24px;
-}
-
-.advantages-link-list{
     width: 264px;
     height: 112px;
     border-radius: 4px;
     background-color: var(--cloud-color);
 }
 
-.advantages-link-list{
+.advantages-link{
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 .caption{
@@ -427,7 +422,49 @@ text-decoration: none
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
+/*-------------------------CUSTOMERS--------------------------*/
 
+.section-paddings {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-section {}
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--grey-color);
+    margin-bottom: 72px;
+}
+
+.customers-logo-box {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-box {}
+
+.customers-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    fill: var(--light-slate-color);
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+}
+.customers-block:hover,
+.customers-block:focus {
+    fill: var(--ocean-color);
+    border: 1px solid var(--ocean-color);
+    border-radius: 4px;
+}
 
 /*-------------------------FOOTER--------------------------*/
 
@@ -437,7 +474,7 @@ text-decoration: none
     padding-bottom: 100px;
 }
 .footer-container{
-    
+    display: flex;
 }
 
 .logo-footer{
@@ -462,6 +499,48 @@ text-decoration: none
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cornflower-color);
-    
     margin-top: 16px;
+}
+
+
+
+.footer-logo-group {
+    margin-left: 120px;
+}
+
+.footer-social-text {
+    font-weight: 500;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.footer-logo-block {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.list {}
+
+.footer-logo {}
+
+.footer-social-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--slate-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-icon{
+    fill: var(--cloud-color);
+}
+.footer-social-box:hover,
+.footer-social-box:focus{
+    background-color: var(--green);
 }
